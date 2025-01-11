@@ -1,7 +1,9 @@
 import java.util.Scanner;
-public class problemTargetSum {
+
+public class problemUniqueNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter the size of the array:");
         int a = sc.nextInt();
         int[] arr = new int[a];
@@ -12,20 +14,21 @@ public class problemTargetSum {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("Enter the target sum:");
-        int sum = sc.nextInt();
+        System.out.println("Unique elements in the array:");
 
-        int count = 0;
-
-        for (int i = 0; i < a; i++) {
-            for (int j = 0; j < a; j++) {
-                if ((arr[i] + arr[j]) == sum) {
-                    count = count + 1;
+        // Iterate over the array to check for unique elements
+        for (int i = 0; i < arr.length; i++) {
+            boolean isUnique = true;
+            for (int j = 0; j < arr.length; j++) {
+                if (i != j && arr[i] == arr[j]) {
+                    isUnique = false;
+                    break;
                 }
             }
+            if (isUnique) {
+                System.out.println(arr[i]);
+            }
         }
-
-        System.out.println("Total no. of pairs is : " + count);
 
         // Close the scanner to free resources
         sc.close();
