@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 // Q. find the smallest and the largest element in the array
 // and return in the array form and print it
 
@@ -27,7 +26,7 @@ class arrayFucntion {
             }
         }
 
-        return new int[]{small, largest}; // Returning the result in the form of an array
+        return new int[]{small, largest};
     }
 }
 
@@ -36,7 +35,7 @@ class printarray {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "\t");
         }
-        System.out.println(); // For cleaner output
+        System.out.println();
     }
 }
 
