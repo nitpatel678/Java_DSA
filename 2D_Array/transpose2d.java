@@ -22,7 +22,7 @@ class Array2D {
     }
 }
 
-public class transpose2D {
+public class transpose2d {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
