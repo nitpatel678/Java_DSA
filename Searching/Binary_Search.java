@@ -3,8 +3,8 @@ public class Binary_Search {
     class arrayPart {
 
         static int binary_search(int[]arr, int key){
-            int low = 0 , high = arr.length;
-            while (low<high) {
+            int low = 0 , high = arr.length-1;
+            while (low<=high) {
                 int mid = (low+high)/2;
                 if (arr[mid]==key) {
                     return 1;
