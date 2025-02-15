@@ -31,4 +31,3 @@ public class NextGreaterElement {
         return nge;
     }
 }
-```
