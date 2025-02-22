@@ -3,7 +3,7 @@ import java.util.*;
 public class info {
     static void HasMapMethod() {
         // Syntax
-        Map<String, Integer> mp = new HashMap<>();
+        HashMap<String, Integer> mp = new HashMap<>();
         // adding information
         mp.put("Akash", 20);
         mp.put("Ayushi", 21);
