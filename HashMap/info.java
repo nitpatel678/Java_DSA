@@ -20,7 +20,7 @@ public class info {
 
         // To remove the pair of key and value pair
         mp.remove("Harshit");
-        mp.remove("Riya"); // It will return null
+        mp.remove("Riya"); // It will return null because there is no Riya key
 
         // Check if the key contain or not
         System.out.println(mp.containsKey("Nitin"));
